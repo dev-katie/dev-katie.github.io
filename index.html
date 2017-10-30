@@ -1,0 +1,302 @@
+<html>
+    <head>
+        <title>Teekay's</title>
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Cairo|Gloria+Hallelujah|Lobster" rel="stylesheet">        
+        <style>
+          body {
+            background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(52, 130, 219));            
+          }
+            #navv {
+              background-color: #fff;
+              height: 70px;
+              padding: 10px;
+            }
+            #navv .navbar-brand {
+              font-size: 30px;
+              color: rgb(15, 15, 121);
+              font-family: 'Lobster', cursive;
+              
+            }
+            #navv li a {
+              color: rgb(15, 15, 121);
+              font-family: 'Acme', sans-serif;
+              font-size: 20px;
+            }
+            .navunderline {
+              height: 4px;
+              width: 80px;
+              /* position: relative;
+              top: 50px; */
+              background-color: rgb(33, 33, 133);
+              margin: 20px auto;
+            }
+            .words {
+              color:rgb(56, 26, 4);
+            }
+            .fa-circle {
+               font-size: 5px
+            }
+            .collapsed {
+                transform: rotate(90deg);
+                border: none;
+            }
+            .jumbotron {
+              margin-bottom: -30px; 
+              background-image: url('img/new2.jpg');
+              background-size: cover;
+              font-family: 'Cairo', sans-serif;
+              padding: 50px; 
+              padding-top: 150px;
+              padding-bottom: 150px;
+            }
+            #skills{
+              background-image: url("img/skills1.jpg");
+              background-repeat: no-repeat;
+              color: white;
+            }
+            #skillset > div > span {
+              color:rgb(231, 43, 43);
+            }
+            #skillset {
+              background-color: rgb(53, 51, 58);
+            }
+            #work {
+              margin-bottom: 400px;
+              box-shadow: 0px 20px 5px #c0b9b9;
+              background-color: #fff;
+              padding-top: 70px;
+              padding-bottom: 30px;
+            }
+            #workk {
+              text-align: center;
+            }
+            #workk > h5 {
+              font-family: 'Gloria Hallelujah', cursive;
+              margin-bottom: 50px;
+            }
+            #workk > h2 {
+              font-family: 'Cairo', sans-serif;
+            }
+            
+            .workimg {
+              height: 200px;
+              width: 300px;
+              border-radius: 10%;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            .workcontent {
+              text-align: center;
+              font-family: 'Acme', sans-serif;
+            }
+            h3 > a {
+              text-decoration: none;
+              color: black;
+            }
+            
+            .footer {
+              /* position: fixed; */
+              bottom: 0;
+              z-index :-1;
+            }
+            .footer img {
+              height: 20%;
+              margin: 0 auto;
+              margin-bottom: 60px;
+            }
+            .footer a .fa {
+              font-size:40px;
+            }
+            .footer p {
+              font-size: 15px;
+            }
+            #footerdiv{
+              position: fixed;
+              bottom:0;
+              right:0;
+              z-index: -1;
+              padding-left: 80px;
+              height: 300px;
+            }
+            #imgdiv {
+              position: fixed;
+              bottom:0;
+              left:0;
+              z-index: -1;
+              margin-bottom:40px;
+              padding-right: 40px;
+            }
+            .footer a i {
+              color:#fff;
+              padding: 20px;
+            }
+            @media only screen and (min-width: 550px) {
+              .footer a .fa {
+              font-size:60px;
+              }
+              .footer p {
+                font-size: 20px;
+              }
+              
+              .footer img {
+                height: 50%;
+                margin: 0 auto;
+              }
+            
+            }
+            
+        </style>
+    </head>
+    <body>
+      <div class="header" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top"  id="navv">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                      </button>
+                      <a class="navbar-brand" href="#">TeeKay's</a>
+                    </div>
+                
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#skills">Skills</a><div id="skillsnav"></div></li>
+                            <li><a href="#work">Work</a><div id="worknav"></div></li>
+                            <!-- <li><a href="#about">About</a></li> -->
+                            <li><a href="#contact">Contact</a><div class="contactnav"></div></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+
+      <div class="jumbotron">
+        <h1>
+          <span class="text">
+            Hey there, <br />
+            I'm Katie <br> a techie and coder <br> who loves
+            <span class="words"></span>
+          </span>
+        </h1>
+      </div>  
+
+      <div id="skills">
+        <div class="row">
+          <div class="col-xs-7">
+            
+          </div>
+          <div class="col-xs-5" id="skillset">
+            <br><br>
+              <div>[</div>
+              <div>&nbsp;&nbsp;&nbsp;{</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> "name": "HTML",</span></div>   
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> "value": "90",</span></div>  
+              <div>&nbsp;&nbsp;&nbsp;},</div>
+              <div>&nbsp;&nbsp;&nbsp;{</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> "name": "CSS",</span></div>   
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> "value": "90",</span></div>  
+              <div>&nbsp;&nbsp;&nbsp;},</div>
+              <div>&nbsp;&nbsp;&nbsp;{</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> "name": "javascript",</span></div>   
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> "value": "70",</span></div>  
+              <div>&nbsp;&nbsp;&nbsp;},</div>
+              <div>&nbsp;&nbsp;&nbsp;{</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> "name": "php",</span></div>   
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> "value": "60",</span></div>  
+              <div>&nbsp;&nbsp;&nbsp;},</div>
+              <div>&nbsp;&nbsp;&nbsp;{</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> "name": "Node.js",</span></div>   
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> "value": "60",</span></div>  
+              <div>&nbsp;&nbsp;&nbsp;},</div>  
+              
+              <div>]</div>
+              <br>
+          </div>
+        </div>
+      </div>
+
+      <div id="work">
+        <div class="row" id="workk">
+          <h2>WORKS</h2>
+          <div class="navunderline"></div>
+          <h5>innovation everyday</h5>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div>
+              <img src="img/capture1.png" class="img img-responsive workimg">
+            </div>
+            <div class="workcontent">
+              <h3><a href="https://github.com/dev-katie/calupris">Calupris</a></h3>
+              <p>A platform where potential employees and employers meet. Built with php</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+              <div>
+                  <img src="img/capture2.png" class="img img-responsive workimg">
+              </div>
+              <div class="workcontent">
+              <h3><a href="https://loca8r.herokuapp.com/">Loca8r</a></h3>
+                <p>Find places with wifi near you where you can relax and work comfortably</p>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div>
+                  <img src="img/capture3.png" class="img img-responsive workimg">
+              </div>
+              <div class="workcontent">
+                <h3>Qtrackr</h3>
+                <p>A project built with node for tracking down items in an organisation.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about">
+        
+      </div>
+      
+      <div class="footer" id="contact">
+        <div class="row">
+            <div class="col-sm-6" id="imgdiv">
+              <img src="img/code.png" class="img img-responsive">
+            </div>                
+          <div class="col-sm-6" id="footerdiv">
+              <h3>Get in touch</h3>
+              <p><i class="fa fa-at"></i>&nbsp;&nbsp;&nbsp;discoverwithkatie@gmail.com</p>
+              <p><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;+23470 634 22 045</p>
+              <a href="https://facebook.com/catherineagubata"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/katie_agu"><i class="fa fa-twitter"></i></a>
+              <a href="https://github.com/dev-katie"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+      <script>
+        var words = ['technology', 'innovation', 'chocolate', 'thinking', 'cake', 'reading', 'innovation'];
+        var interval = 1500;
+        var index = 0;
+
+        function change() {
+          document.getElementsByClassName('words')[0].innerHTML = words[index];
+          var intervalFunc = setInterval(function(){
+            index = (++index)%words.length;
+            document.getElementsByClassName('words')[0].innerHTML = words[index];
+            
+          }, interval);
+        };
+
+        change();
+      </script>
+    </body>
+</html>
